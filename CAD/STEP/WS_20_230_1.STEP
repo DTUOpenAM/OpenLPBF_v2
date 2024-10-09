@@ -1,0 +1,17 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION (( 'STEP AP214' ),
+    '1' );
+FILE_NAME ('WS_20_230_1.STEP',
+    '2024-10-09T10:45:43',
+    ( '' ),
+    ( '' ),
+    'SwSTEP 2.0',
+    'SolidWorks 2024',
+    '' );
+FILE_SCHEMA (( 'AUTOMOTIVE_DESIGN' ));
+ENDSEC;
+
+DATA;
+ENDSEC;
+END-ISO-10303-21;
