@@ -19,6 +19,9 @@ Feel free to contact me or the team (see the bottom of the readme) if you have q
 Click the image to be taken to Youtube for a video of the system running.
 
 
+[Link to Airtable Bill of Materials](https://airtable.com/appdAlNlcIDdM1f8y/shrU9wDBQRVg9hxu0)
+
+
 ## Safety
 
 Thorough consideration is needed before working with metal L-PBF, whether you buy or build. This system is an experimental setup meant for R&D, and a certified official has not approved its safety aspects. Proceed with caution at your own risk.
