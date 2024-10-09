@@ -5,13 +5,8 @@
 # OpenAM
 <p align="center"><img src="misc/git/DTU_Logo.png" height="100" alt="DTU logo" /></p>
 
-_Update August 2024_
-The official funding behind the project has run its course, and the systems are now (being) released. Another repo contains the VPP system, whereas this will continue to contain and evolve the metal LPBF system. Updated CAD, firmware, etc. will come. Please get in touch with us if you are interested in early access or find missing information.
-
-
-_Update 3rd of January 2024._
-
-The DTU Open AM PBF repo for everything related to machine building (CAD, schematics, BOM, etc.). Everything is a work in progress and will be published as soon as sufficiently detailed documentation is produced. Some changes were made to the system, resulting in versions 1 and 2. Version 2 will be the actual release.
+_Update October 2024_
+This repo contains the documentation for the second iteration of the metal laser powder bed fusion system. They is a certain 
 
 **Project Impetus:** The world of Laser Powder-bed Fusion (L-PBF) has been tightly held within the clutches of proprietary practices, limiting innovation and knowledge sharing. This project was born out of a desire to challenge this exclusivity by creating an open-source infrastructure for L-PBF. The aim was to democratize access to this advanced manufacturing process, stimulate innovation, and foster cross-disciplinary collaboration. Despite the complex and professional nature of L-PBF, which involves dealing with high-power lasers, explosive metal powders, and specialized equipment, the project's commitment to open-source principles remained unwavering.
 
