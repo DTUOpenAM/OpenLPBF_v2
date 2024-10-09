@@ -2,27 +2,41 @@
 <p align="center"><img src="misc/git/OpenAMini.png" height="150" alt="Open Additive Initiative logo" /></p>
 <h1 align="center">The DTU Open Additive Initiative, Laser-Based Powder Bed Fusion Repo</h1>
 
-# OpenAM
+# OpenAM Laser powder bed fusion system
 <p align="center"><img src="misc/git/DTU_Logo.png" height="100" alt="DTU logo" /></p>
 
 _Update October 2024_
-This repo contains the documentation for the second iteration of the metal laser powder bed fusion system. They is a certain 
+This repo contains the documentation for the second iteration of the metal laser powder bed fusion system. Version 1 and 2 overlap to a significant degree, however, key differences make version 2 the successor and ostensibly replace version 1.
+The following repo deals mostly with the hardware of the system. See the other repos owned by DTUOpenAM for the firmware and software required to run the system.
+Link to the Airtable BOM can be found using this [link to Airtable Bill of Materials](https://airtable.com/appdAlNlcIDdM1f8y/shrU9wDBQRVg9hxu0)
 
-**Project Impetus:** The world of Laser Powder-bed Fusion (L-PBF) has been tightly held within the clutches of proprietary practices, limiting innovation and knowledge sharing. This project was born out of a desire to challenge this exclusivity by creating an open-source infrastructure for L-PBF. The aim was to democratize access to this advanced manufacturing process, stimulate innovation, and foster cross-disciplinary collaboration. Despite the complex and professional nature of L-PBF, which involves dealing with high-power lasers, explosive metal powders, and specialized equipment, the project's commitment to open-source principles remained unwavering.
+For an in-depth description of the approach to designing the system, please see the publication based on version 1: [Applying systems engineering principles to develop an open source laser based metal powder bed fusion system](https://www.emerald.com/insight/content/doi/10.1108/RPJ-12-2023-0422/full/html).
+The full PhD-thesis describing the work can be found here under the title [Systems Engineering in the Pursuit of Open Architecture Additive Manufacturing a study](https://orbit.dtu.dk/en/publications/systems-engineering-in-the-pursuit-of-open-architecture-additive-).
 
-**Project Results:** The project successfully designed, built, verified and validated an open-source metal L-PBF system. The resulting machine is user-friendly, fully open, and performs comparably with commercial L-PBF systems. The entire design and detailed documentation are published under the CERN-OHL-P (permissive) v2 Open Source Hardware license and are accessible for public adaptation and improvement. The project contributes to a broader understanding and accessibility of additive manufacturing technology, paving the way for future enhancements and a community-driven approach to innovation.
+
+## Project Impetus 
+The world of Laser Powder-bed Fusion (L-PBF) has been tightly held within the clutches of proprietary practices, limiting innovation and knowledge sharing. This project was born out of a desire to challenge this exclusivity by creating an open-source infrastructure for L-PBF. The aim was to democratize access to this advanced manufacturing process, stimulate innovation, and foster cross-disciplinary collaboration. Despite the complex and professional nature of L-PBF, which involves dealing with high-power lasers, explosive metal powders, and specialized equipment, the project's commitment to open-source principles remained unwavering.
+
+## Project Results
+The project successfully designed, built, verified, and validated an open-source metal L-PBF system. The resulting machine is user-friendly, fully open, and performs comparably with commercial L-PBF systems. The entire design and detailed documentation are published under the CERN-OHL-P (permissive) v2 Open Source Hardware license and are accessible for public adaptation and improvement. The project contributes to a broader understanding and accessibility of additive manufacturing technology, paving the way for future enhancements and a community-driven approach to innovation.
 
 Find out more and contribute to the evolution of this revolutionary project on GitHub. Join us in advancing the field of additive manufacturing!
 Feel free to contact me or the team (see the bottom of the readme) if you have questions or want to adopt the system - or parts of it.
 
 [![Video of system](https://img.youtube.com/vi/1JqzYOu9leE/0.jpg)](https://www.youtube.com/watch?v=1JqzYOu9leE "Video of process")
+
 Click the image to be taken to Youtube for a video of the system running.
 
 
-[Link to Airtable Bill of Materials](https://airtable.com/appdAlNlcIDdM1f8y/shrU9wDBQRVg9hxu0)
+
+## Main system aspects
+The various elements will be discussed below in differing levels of detail. A key design goal was to attempt the design of a cost-effective system, rather than the ultimate system. What makes the system good enough for part manufacturing, for research, and for experimenting and developing the process? What design choice lowers the barrier to adoption? And will these choices enable entities with limited funds to utilize the benefits of metal LPBF? These were some of the research goals. The system cost is seen below, which we believe will help the adoption and demystification of metal LPBF.
+
+<p align="center"><img src="misc/git/CostDist.png" height="300" alt="Cost distribution" /></p>
+<h3 align="center">Cost distribution</h3>
 
 
-## Safety
+### Safety
 
 Thorough consideration is needed before working with metal L-PBF, whether you buy or build. This system is an experimental setup meant for R&D, and a certified official has not approved its safety aspects. Proceed with caution at your own risk.
 
@@ -39,7 +53,7 @@ European Union Directives: In the EU, the Machinery Directive 2006/42/EC is rele
 
 OSHA Directives: In the United States, the Occupational Safety and Health Administration (OSHA) has regulations that would apply to the operation of a laser-based system. This includes standards for personal protective equipment (29 CFR 1910.132), general requirements for all machines (29 CFR 1910.212), and specific regulations for welding, cutting, and brazing (29 CFR 1910.252).
 
-The open-source Laser Powder Bed Fusion system incorporates a comprehensive safety subsystem, including emergency stops, interlock switches, and a safety PLC to ensure safe operation. Compliance with relevant EU directives and OSHA regulations is crucial for the lawful and safe operation of such advanced manufacturing systems​​.
+The open-source Laser Powder Bed Fusion system incorporates a comprehensive safety subsystem, including emergency stops, interlock switches, and a safety PLC to ensure safe operation. Compliance with relevant EU directives and OSHA regulations is crucial for the lawful and safe operation of such advanced manufacturing systems​​. Recreation of the system should be done by carefully considering local rules and regulations while employing common sense. Please seek professional guidance when in doubt regarding safety systems and their design. Consider contacting services or safety providers such as (but not limited to) Pilz, ABB, Pheonix Contacts, Jokab Safety, etc.
 
 
 ## The Project and Git Structure
@@ -57,30 +71,23 @@ This provided a structured framework for the project's lifecycle, guiding it fro
 <p align="center"><img src="misc/git/V-model_4.png" height="300" alt="The Vee-model used in the project" /></p>
 <h3 align="center">The Vee-model used in the project</h3>
 
-### Object Process Methodology (OPM): 
-This tool was used for decomposing complexity, combining classes of information, and creating diagrams for specific use cases. It helped in visualizing and managing the project's development.
-
-### Design Structure Matrix (DSM): 
-This facilitated the analysis of internal interfaces and provoked a reevaluation of the internal formal structure of the system. It was instrumental in designing a system with modularity and open architecture.
 
 ### Relational Database Method: 
-Instead of using Systems Modeling Language (SysML), which was considered, a relational database method was employed to manage information about every facet of every element in the system. Airtable was used, which will also be shared. This will function as the Bill of Materials.
+Instead of using Systems Modeling Language (SysML), which was considered, a relational database method was employed to manage information about every facet of every element in the system. Airtable was used, which will also be shared. This will function as the Bill of Materials. A link to the main view is provided. Please contact if you wish to be granted more access to the Airtable BOM.
 
-These tools collectively supported the project's goals of creating an adaptable, robust, and user-friendly open-source system while managing the complexities inherent in such an ambitious project​​.
 
 ## Physical and Digital
 
-The repo deals with the physical aspects, whereas the controller repo and the post-processer repo deal with the digital aspects. The controller is very much still under development, and a major redesign is underway. However, with certain limitations, the controller is very capable.
+The repo deals with the physical aspects, whereas the controller repo and the post-processer repo deal with the digital aspects. The controller is very much still under development, and a major redesign is underway. However, with certain limitations, the controller is very capable. And if considering the pricepoint of the Teensy 4.1-based constroller it is unbeatable.
 
 <p align="center"><img src="misc/git/UserOPM_edit_v3.png" height="500" alt="OPM of the system context" /></p>
 <h3 align="center">OPM of the system context</h3>
 
-The majority of the readme to follow considers the physical aspects of the system.
 
 
-## Physical System (Version 1)
+## Physical System
 
-The system can be seen below. It features a 250mm x 150mm build volume, a 300W 1080nm laser, and a multi-material powder system. It is self-contained and has a closed-loop gas flow cross flow. The system uses a standard windows laptop running custom and standard software.
+The system can be seen below. It features a 250mm x 150mm build volume and a 300W 1080nm laser. It is self-contained and has a closed-loop gas flow cross flow. The system uses a PC running Ubuntu, but Windows is also supported. The PC runs the custom Python-based software.
 
 <p align="center"><img src="misc/git/LOOP_Nikon.jpg" height="500" alt="Front view of the system" /></p>
 <h3 align="center">Front view of the system</h3>
@@ -102,25 +109,19 @@ The main architecture is seen below:
 
 
 ### CAD
-Each sub-system has its own folder with a .zip containing .step-files and technical drawings in .pdf.
-The technical drawings will be a mix of drawings for manufacture and assembly instructions.
-
-The full original Solidworks assembly will also be present.
+The full native Solidworks assembly is provided, as well as a .step assembly for use in other CAD packages. Technical drawings of the custom components are also provided.
 
 <p align="center"><img src="misc/git/ExplodedViews_2.png" height="500" alt="Main mechanical systems" /></p>
 <h3 align="center">Main mechanical systems</h3>
 
 
 ### Electrical
-The Electrical folder will contain information regarding the electrical side of things.
-
-### BOM
-The folder called Bill of Materials combine all the information, including supplier information and datasheets (if available).
-Link to the airtable document is in the BOM readme.
+The Electrical folder will contain information regarding the electrical side of things and are under development.
 
 
-<p align="center"><img src="misc/git/CostDist.png" height="300" alt="Cost distribution" /></p>
-<h3 align="center">Cost distribution</h3>
+
+
+
 
 
 # Digital system
@@ -132,10 +133,6 @@ The digital side of the system is under rapid development. The current controlle
 <p align="center"><img src="misc/git/GLAMS-OPM.PNG" height="500" alt="GLAMSOPM" /></p>
 <h3 align="center">GLAMS OPM</h3>
 
-The controller repo will contain PCB design and firmware.
-
-
-## Software
 
 ### Slicer and controller communication
 
@@ -147,7 +144,7 @@ The controller repo will contain PCB design and firmware.
 
 ### Netfabb
 
-See the Netfabb repo for information regarding the Netfabb post processor etc. This is the recommended approach currently.
+See the Netfabb repo for information regarding the Netfabb post processor etc. This is the recommended approach currently. The post-processor will work with any slicer that is able to output a CLI file with exported part names/labels.
 
 
 ## Samples
