@@ -121,9 +121,6 @@ The Electrical folder will contain information regarding the electrical side of 
 
 
 
-
-
-
 # Digital system
 
 The digital side of the system is under rapid development. The current controller is capable of printing within certain limitations.
@@ -134,20 +131,12 @@ The digital side of the system is under rapid development. The current controlle
 <h3 align="center">GLAMS OPM</h3>
 
 
-### Slicer and controller communication
-
-<p align="center"><img src="misc/git/slicer.PNG" height="500" alt="Slicer" /></p>
-<h3 align="center">Slicer</h3>
-
-<p align="center"><img src="misc/git/gcodesender.PNG" height="500" alt="gcodeSender" /></p>
-<h3 align="center">gcodeSender</h3>
-
-### Netfabb
+## Netfabb
 
 See the Netfabb repo for information regarding the Netfabb post processor etc. This is the recommended approach currently. The post-processor will work with any slicer that is able to output a CLI file with exported part names/labels.
 
 
-## Samples
+# Samples
 
 <p align="center"><img src="misc/git/PrintOverview.png" height="500" alt="Manufactured samples" /></p>
 <h3 align="center">Manufactured samples</h3>
